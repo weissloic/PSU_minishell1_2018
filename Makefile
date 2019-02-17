@@ -2,6 +2,8 @@ CC	=	gcc
 CFLAGS = -I/include/ -L./lib/my -lmy -g
 
 SRC_TEST = 	main.c \
+			norm.c \
+			exec.c \
 		   	lib/my/adresspointer.c \
 			lib/my/base.c \
 			lib/my/printfunc.c \

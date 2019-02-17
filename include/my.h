@@ -27,6 +27,7 @@ typedef struct path_t {
     char *buffer;
     char *file;
     size_t len;
+    int e;
 } path_t;
 
 int my_put_nbr(int nb);
@@ -56,6 +57,7 @@ void my_putadress_pointer1(va_list ap);
 void my_putpercentage1(va_list ap);
 void my_u_put_nbr1(va_list ap);
 void func_put_stroctal1(va_list ap);
+char    *my_strcat(char *dest, char *src);
 
 static void (*point_func[12])(va_list ap) = {
     &my_putcharacter1,
